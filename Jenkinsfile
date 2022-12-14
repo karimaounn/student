@@ -12,15 +12,15 @@ pipeline {
                 bat 'build.bat'
             }
         }
-        // stage('Build Docker Image') {
-        //     steps {
-        //         sh 'docker build -t student-service .'
-        //     }
-        // }
-        // stage('Run Docker Container') {
-        //     steps {
-        //         sh 'docker run -p 8081:8081 student-service'
-        //     }
-        // }
+        stage('Build Docker Image') {
+            steps {
+                bat 'docker.buid.bat'
+            }
+        }
+        stage('Run Docker Container') {
+            steps {
+                bat 'docker.run.bat'
+            }
+        }
     }
 }
