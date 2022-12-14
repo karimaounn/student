@@ -4,7 +4,7 @@ pipeline {
         pollSCM '* * * * *'
     }
     stages {
-        stage('Build') {
+        stage('Build Spring Boot App') {
             steps {
                 sh './build.sh'
             }
