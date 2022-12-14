@@ -6,7 +6,8 @@ pipeline {
     stages {
         stage('Build Spring Boot App') {
             steps {
-                bat './build.sh'
+                bat 'mvnw package'
+                bat 'mkdir -p target/dependency && (cd target/dependency; jar -xf ../*.jar)'
             }
         }
         // stage('Build Docker Image') {
