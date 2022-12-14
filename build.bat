@@ -1,2 +1,1 @@
-mvnw package
-mkdir -p target/dependency && (cd target/dependency; jar -xf ../*.jar)
+mvnw package && mkdir target\\dependency && cd target\\dependency && jar -xf ../*.jar
