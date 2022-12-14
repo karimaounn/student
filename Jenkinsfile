@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('Build Spring Boot App') {
             steps {
-                sh './build.sh'
+                bat './build.sh'
             }
         }
         // stage('Build Docker Image') {
