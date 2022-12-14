@@ -10,9 +10,8 @@ pipeline {
         stage('Build Spring Boot App') {
             steps {
                 bat 'mvnw package'
-                dir ('target/dependency') {
-                }
-                bat 'cd target/dependency'
+                bat 'mkdir.exe -p target/dependency'
+                bat 'cd.exe target/dependency'
                 bat 'jar -xf ../*.jar'
             }
         }
