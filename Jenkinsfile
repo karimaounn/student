@@ -2,6 +2,7 @@ pipeline {
     agent any
     environment {
         JAVA_HOME = 'C:\\Program Files\\Java\\jdk-19'
+        jar = 'C:\\Program Files\\Java\\jdk-19\\bin'
     }
     triggers {
         pollSCM '* * * * *'

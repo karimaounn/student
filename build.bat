@@ -1,1 +1,1 @@
-mvnw package && cd target\\dependency && java -jar ../*.jar
+mvnw package && cd target\\dependency && "C:\\Program Files\\Java\\jdk-19\\bin\\jar.exe" -xf ../*.jar
