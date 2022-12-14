@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage('Build Spring Boot App') {
             steps {
-                sh 'build.sh'
+                bat 'build.bat'
             }
         }
         // stage('Build Docker Image') {
