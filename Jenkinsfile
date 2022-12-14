@@ -14,7 +14,7 @@ pipeline {
         }
         stage('Build Docker Image') {
             steps {
-                bat 'docker.buid.bat'
+                bat 'docker.build.bat'
             }
         }
         stage('Run Docker Container') {
