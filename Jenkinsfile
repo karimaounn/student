@@ -12,7 +12,6 @@ pipeline {
                 bat 'mvnw package'
                 dir ('target/dependency') {
                 }
-                bat 'mkdir -p target/dependency'
                 bat 'cd target/dependency'
                 bat 'jar -xf ../*.jar'
             }
